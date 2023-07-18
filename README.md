@@ -6,7 +6,7 @@ Copyright (c) **2023 SimonRess**
 
 **Citation:**
 ```
-Ress, Simon (2023). *ShinyTron: Automatic creation of standalone desktop applications with R-Shiny and Electron*. R package
+Ress, Simon (2023). ShinyTron: Automatic creation of standalone desktop applications with R-Shiny and Electron. R package
   version 0.1.0, <https://github.com/SimonRess/ShinyTron>.
 ```
 **BibTeX entry** for LaTeX users:
