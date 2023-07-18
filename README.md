@@ -1,6 +1,29 @@
 # ShinyTron <a href="https://github.com/SimonRess/ShinyTron"><img src="https://github.com/SimonRess/ShinyTron/blob/main/ShinyTron_Logo.png" align="right" height="138" /></a>
 (2023.07) - Automatic creation of standalone desktop applications with R-Shiny and Electron. Dead easy!
 
+## MIT License
+Copyright (c) **2023 SimonRess**
+
+**Citation:**
+```
+Ress, Simon (2023). *ShinyTron: Automatic creation of standalone desktop applications with R-Shiny and Electron*. R package
+  version 0.1.0, <https://github.com/SimonRess/ShinyTron>.
+```
+**BibTeX entry** for LaTeX users:
+```
+  @Manual{,
+    title = {ShinyTron: Automatic creation of standalone desktop applications with R-Shiny and Electron},
+    author = {Simon Ress},
+    year = {2023},
+    note = {R package version 0.1.0},
+    url = {[https://CRAN.R-project.org/package=dplyr](https://github.com/SimonRess/ShinyTron)},
+  }
+```
+
+The above **copyright notice** shall be included in all
+copies, substantial portions of the Software, and other artefacts made with ShinyTron**.
+
+
 ## Overview
 ...
 
