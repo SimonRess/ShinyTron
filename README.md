@@ -16,7 +16,7 @@ Ress, Simon (2023). ShinyTron: Automatic creation of standalone desktop applicat
     author = {Simon Ress},
     year = {2023},
     note = {R package version 0.1.0},
-    url = {[https://CRAN.R-project.org/package=dplyr](https://github.com/SimonRess/ShinyTron)},
+    url = {https://github.com/SimonRess/ShinyTron},
   }
 ```
 
