@@ -1,47 +1,11 @@
-#-------------------------------------#
-# 1. Creating Electron-App by Hand ####
-#-------------------------------------#
-
-# I. General steps to prepare the template:
-  # 1. Install [Node.js](https://sourceforge.net/projects/rportable/) -> JavaScript Runtime, used for installation and running of the scripts
-  # 2. Download repo: https://git.noc.ruhr-uni-bochum.de/jeworsbv/shiny-electron
-  # 3. Download & Install [R-Portable](https://sourceforge.net/projects/rportable/files/R-Portable/)
-  # 4. Then copy the contents of the "App\R-Portable" subdirectory to the "R-Portable-Win" subfolder of the "shiny-electron"-folder.
-  #    The folders "test", "docs" (and possibly also "TCL") can be deleted to save storage space in the app.
-  # 5. Create helper-scripts for the create of the app: type `npm install electron-packager -g` in the "Node.js command prompt"
-  #    The "-g" parameter ensures that the script is available globally and not just for a single project.
-  #    This means that it will also be available for other shiny apps in the future.
-  # 6. Switch to the "shiny-electron"-folder: e.g. `cd C:\...\shiny-electron-main`
-  # 7. Download other necessary program libraries: `npm install` (Install dependencies for electron) & `npm audit fix` (Update dependencies)
-#
-# II. Customize individual app
-  # 1. (A) Open R-Studio and (B) Install all required packages of your app into the "shiny-electron-main\R-Portable-Win\library"-folder:
-  #    e.g. `install.packages("shiny", lib = "C:/Users/simon/Desktop/StandaloneApp/shiny-electron-main/R-Portable-Win/library")`
-  # 2. Adjusting the configuration of the app within the "package.json"-file:
-  #    - name: The name of the app (shown in the title bar). This entry must be repeated in the script.
-  #    - description: Description of the app
-  #    - scripts: The instructions for building the program. Further options can be adjusted here
-  #      -out=Path: The target path where the program will be placed
-  #      -version-string.CompanyName=MyCompany: The publisher
-  #      -version-string.ProductName=\"Shiny Electron App\": The name of the app. Here, quotation marks must be escaped with \
-  #      -repository: The information is only relevant if the program is published in a repository
-  # 3. Create the program by typing `npm run package-win` in the "Node.js command prompt".
-  #    (We need to be in the folder that contains the "package.json" file)
-#
-# III. Run the app
-  # 1. After the script has run through, a subfolder with the finished program appears in the folder configured under "--out".
-  # 2. The app can be started by double-clicking on "Appname.exe" (in the template "Shiny Electron App.exe").
-
-
-
 #---------------------------------------#
-# 2. Creating Electron-App by Script ####
+# 1. Creating Electron-App by Script ####
 #---------------------------------------#
 
 #rm(list=ls())
 
 #Install/Load packages
-#if(!require("rvest")) install.packages("rvest") #
+#if(!require("rvest")) install.packages("rvest")
 require(rvest)
 
 Build_App = function(path=file.path(Sys.getenv("USERPROFILE"),"Desktop"),
@@ -181,7 +145,7 @@ Build_App = function(path=file.path(Sys.getenv("USERPROFILE"),"Desktop"),
      Sys.sleep(1)
      cat("1...", "\n")
      Sys.sleep(1)
-     browseURL("https://github.com/SimonRess/Shiny-Electron")
+     browseURL("https://github.com/SimonRess/ShinyTron")
      Sys.sleep(5)
      browseURL("https://github.com/SimonRess/")
    }
@@ -197,7 +161,7 @@ Build_App = function(path=file.path(Sys.getenv("USERPROFILE"),"Desktop"),
      Sys.sleep(1)
      cat("1...", "\n")
      Sys.sleep(1)
-     browseURL("https://github.com/SimonRess/Shiny-Electron/issues")
+     browseURL("https://github.com/SimonRess/ShinyTron/issues")
    }
 
 

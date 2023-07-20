@@ -22,7 +22,7 @@ Install_required_RPackages = function(path=file.path(Sys.getenv("USERPROFILE"),"
     }
 
 
-  #Find all required packages of your app.R
+  #Find all required packages (-> packages loaded by library(...) or require(...)) of your app.R
     file = readLines(paste0(getwd(),"/app.r"))
     pattern = ".*library\\(\\s*(.*?)\\s*\\).*"
     req.packages = as.vector(na.omit(unlist(lapply(file, \(x) regmatches(x, regexec(pattern, x))[[1]][2]))))
